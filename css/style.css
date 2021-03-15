@@ -111,6 +111,23 @@ img {
 .active {
   color: var(--accent-color);
 }
+
+.nav-list-item {
+  position: relative;
+}
+
+.active::after {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  margin-bottom: -30px;
+  content: '';
+  background-color: var(--accent-color);
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+}
+
 .contacts {
   color: var(--primary-text-color);
 }
